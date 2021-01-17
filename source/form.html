@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head class="page">
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <img src="https://via.placeholder.com/85x36" alt="Интернет-магазин «Мишка»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог товаров</a>
+              <a class="main-nav__link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Поиск по сайту</a>
+              <a class="main-nav__link" href="#">Корзина: <span class=""></span>пока пуста</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новые поступления</a>
+              <a class="main-nav__link" href="#">Распродажа</a>
+            </li>
+            <li class="main-nav__item">
+              <p class="main-nav__feature">Бесплатная доставка по России</p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма заказа индивидуальных вязанных изделий в интернет-магазине Мишка</h1>
+      <section class="knitwear-order">
+        <div class="knitwear-order__container container">
+          <h2 class="knitwear-order__title">Вязание на заказ</h2>
+          <p class="knitwear-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+      </section>
+      <section class="knitwear-request">
+        <h2 class="knitwear-request__title visually-hidden">Форма заказа</h2>
+        <div class="knitwear-request__container container">
+          <form class="knitwear-request__form knitwear-form " action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="knitwear-form__group-type">
+              <legend class="knitwear-form__title">Тип</legend>
+              <div class="knitwear-form__field-group-type">
+                <label class="knitwear-form__label" for="type-interior">Аксессуар для интерьера</label>
+                <input class="knitwear-form__radio-option" type="radio" id="type-interior" name="product-type" value="interior" checked>
+              </div>
+              <div class="knitwear-form__field-group-type">
+                <label class="knitwear-form__label" for="type-toy">Детская игрушка</label>
+                <input class="knitwear-form__radio-option" type="radio" id="type-toy" name="product-type" value="toy">
+              </div>
+            </fieldset>
+            <fieldset class="knitwear-form__group-color">
+              <legend class="knitwear-form__title">Цвет</legend>
+              <div class="knitwear-form__field-group-color">
+                <label class="knitwear-form__label" for="color-white">Белый</label>
+                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-white" name="product-color" value="white" checked>
+              </div>
+              <div class="knitwear-form__field-group-color">
+                <label class="knitwear-form__label" for="color-grey">Серый</label>
+                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-grey" name="product-color" value="grey" checked>
+              </div>
+              <div class="knitwear-form__field-group-color">
+                <label class="knitwear-form__label" for="color-tiffany">«Тиффани»</label>
+                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-tiffany" name="product-color" value="tiffany">
+              </div>
+              <div class="knitwear-form__field-group-color">
+                <label class="knitwear-form__label" for="color-black">Черный</label>
+                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-black" name="product-color" value="black">
+              </div>
+              <div class="knitwear-form__field-group-color">
+                <label class="knitwear-form__label" for="color-pink">Розовый</label>
+                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-pink" name="product-color" value="pink">
+              </div>
+              <div class="knitwear-form__field-group-color">
+                <label class="knitwear-form__label" for="color-orange">Оранжевый</label>
+                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-orange" name="product-color" value="orange">
+              </div>
+            </fieldset>
+            <fieldset class="knitwear-form__group-fullname">
+              <legend class="knitwear-form__title">Фио</legend>
+              <div class="knitwear-form__field-group-fullname">
+                <label class="knitwear-form__label" for="first-name">Имя:</label>
+                <input class="knitwear-form__text-option" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+              </div>
+              <div class="knitwear-form__field-group-fullname">
+                <label class="knitwear-form__label" for="last-name">Фамилия:</label>
+                <input class="knitwear-form__text-option" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
+              </div>
+              <div class="knitwear-form__field-group-fullname">
+                <label class="knitwear-form__label" for="middle-name">Отчество:</label>
+                <input class="knitwear-form__text-option" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+              </div>
+
+            </fieldset>
+            <fieldset class="knitwear-form__group-phone">
+              <legend class="knitwear-form__title">тел</legend>
+              <div class="knitwear-form__field-group-phone">
+                <input class="knitwear-form__tel-option" type="tel" name="phone" pattern="\+7 \d\d\d \d\d\d \d\d \d\d" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </div>
+            </fieldset>
+            <fieldset class="knitwear-form__group-email">
+              <legend class="knitwear-form__title">E-mail</legend>
+              <div class="knitwear-form__field-group-email">
+                <input class="knitwear-form__email-option" type="email" name="email" placeholder="Ваш Email*" required>
+              </div>
+            </fieldset>
+            <fieldset class="knitwear-form__group-additional">
+              <legend class="knitwear-form__title">Доп</legend>
+              <div class="knitwear-form__field-group-additional">
+                <textarea class="knitwear-form__text-option" name="additional-information" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </fieldset>
+            <small class="knitwear-form__tagline">*Поля обязательны для заполнения</small>
+            <button class="knitwear-form__button button" type="submit">Отправить заказ</button>
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/85x36" alt="Интернет-магазин «Мишка»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттер</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
