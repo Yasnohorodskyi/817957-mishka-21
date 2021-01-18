@@ -44,7 +44,7 @@
         <h2 class="knitwear-request__title visually-hidden">Форма заказа</h2>
         <div class="knitwear-request__container container">
           <form class="knitwear-request__form knitwear-form " action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="knitwear-form__group-type">
+            <fieldset class="knitwear-form__field">
               <legend class="knitwear-form__title">Тип</legend>
               <div class="knitwear-form__field-group-type">
                 <label class="knitwear-form__label" for="type-interior">Аксессуар для интерьера</label>
@@ -55,7 +55,7 @@
                 <input class="knitwear-form__radio-option" type="radio" id="type-toy" name="product-type" value="toy">
               </div>
             </fieldset>
-            <fieldset class="knitwear-form__group-color">
+            <fieldset class="knitwear-form__field knitwear-form__field--darken">
               <legend class="knitwear-form__title">Цвет</legend>
               <div class="knitwear-form__field-group-color">
                 <label class="knitwear-form__label" for="color-white">Белый</label>
@@ -82,7 +82,7 @@
                 <input class="knitwear-form__checkbox-option" type="checkbox" id="color-orange" name="product-color" value="orange">
               </div>
             </fieldset>
-            <fieldset class="knitwear-form__group-fullname">
+            <fieldset class="knitwear-form__field ">
               <legend class="knitwear-form__title">Фио</legend>
               <div class="knitwear-form__field-group-fullname">
                 <label class="knitwear-form__label" for="first-name">Имя:</label>
@@ -98,19 +98,19 @@
               </div>
 
             </fieldset>
-            <fieldset class="knitwear-form__group-phone">
+            <fieldset class="knitwear-form__field knitwear-form__field--darken">
               <legend class="knitwear-form__title">тел</legend>
               <div class="knitwear-form__field-group-phone">
                 <input class="knitwear-form__tel-option" type="tel" name="phone" pattern="\+7 \d\d\d \d\d\d \d\d \d\d" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </div>
             </fieldset>
-            <fieldset class="knitwear-form__group-email">
+            <fieldset class="knitwear-form__field knitwear-form__field--darken">
               <legend class="knitwear-form__title">E-mail</legend>
               <div class="knitwear-form__field-group-email">
                 <input class="knitwear-form__email-option" type="email" name="email" placeholder="Ваш Email*" required>
               </div>
             </fieldset>
-            <fieldset class="knitwear-form__group-additional">
+            <fieldset class="knitwear-form__field">
               <legend class="knitwear-form__title">Доп</legend>
               <div class="knitwear-form__field-group-additional">
                 <textarea class="knitwear-form__text-option" name="additional-information" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
