@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head class="page">
+<html class="page" lang="ru">
+  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -36,14 +37,14 @@
       <h1 class="visually-hidden">Мишка - интернет-магазин вязанных товаров</h1>
       <section class="promo">
         <div class="promo__container container">
-          <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
+          <h2 class="promo__title">Милые штуки ручной<br>работы для дома</h2>
           <div class="promo__category main-category">
             <ul class="main-category__list">
               <li class="main-category__item main-category__item--decor">
-                <a class="main-category__link" href="#">Предметы интерьера</a>
+                <a class="main-category__link" href="#">Предметы<br>интерьера</a>
               </li>
               <li class="main-category__item main-category__item--toys">
-                <a class="main-category__link" href="#">Детские игрушки</a>
+                <a class="main-category__link" href="#">Детские<br>игрушки</a>
               </li>
             </ul>
           </div>
@@ -82,19 +83,19 @@
               <p class="about-us__description">Экологически<br> чистые материалы</p>
             </li>
             <li class="about-us__item about-us__item--style">
-              <p class="about-us__item">Скандинавский стиль<br> по российской цене</p>
+              <p class="about-us__description">Скандинавский стиль<br> по российской цене</p>
             </li>
             <li class="about-us__item about-us__item--like">
-              <p class="about-us__item">Увеличивает лайки<br> на фотографиях</p>
+              <p class="about-us__description">Увеличивает лайки<br> на фотографиях</p>
             </li>
             <li class="about-us__item about-us__item--handmade">
-              <p class="about-us__item">Связано вручную<br> с любовью и умилением</p>
+              <p class="about-us__description">Связано вручную<br> с любовью и умилением</p>
             </li>
             <li class="about-us__item about-us__item--manufacturer">
-              <p class="about-us__item">Поддержка отечественного<br> производителя</p>
+              <p class="about-us__description">Поддержка отечественного<br> производителя</p>
             </li>
             <li class="about-us__item about-us__item--present">
-              <p class="about-us__item">Поставляется<br> в подарочной упаковке</p>
+              <p class="about-us__description">Поставляется<br> в подарочной упаковке</p>
             </li>
           </ul>
         </div>
@@ -162,13 +163,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Мы в Инстаграм</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттер</a>
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Мы в Твиттер</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -180,7 +187,7 @@
     </footer>
     <section class="modal modal--overlay">
       <div class="modal__container container">
-        <h2 class="modile_title">Добавить в корзину</h2>
+        <h2 class="modile__title">Добавить в корзину</h2>
         <form class="modal__form order-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="order-form__group">
             <legend class="order-form__title">Выберите размер:</legend>
@@ -197,7 +204,7 @@
                 <input class="order-form__option" type="radio" id="large" name="size" value="l">
               </div>
             </fieldset>
-            <button class="order-form__button button" type="submit">Добавить</button>
+            <button class="order-form__button" type="submit">Добавить</button>
         </form>
       </div>
     </section>
