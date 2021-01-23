@@ -15,8 +15,8 @@
           <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог товаров</a>
-              <a class="main-nav__link" href="#">Вязание на заказ</a>
+              <a class="main-nav__link" href="/catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="/form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Поиск по сайту</a>
@@ -47,74 +47,79 @@
           <form class="knitwear-request__form knitwear-form " action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="knitwear-form__field">
               <legend class="knitwear-form__title">Тип</legend>
-              <div class="knitwear-form__field-group-type">
-                <label class="knitwear-form__label" for="type-interior">Аксессуар для интерьера</label>
-                <input class="knitwear-form__radio-option" type="radio" id="type-interior" name="product-type" value="interior" checked>
-              </div>
-              <div class="knitwear-form__field-group-type">
-                <label class="knitwear-form__label" for="type-toy">Детская игрушка</label>
-                <input class="knitwear-form__radio-option" type="radio" id="type-toy" name="product-type" value="toy">
-              </div>
+              <ul class="knitwear-form__list-group-type">
+                <li class="knitwear-form__field-group-type">
+                  <input class="knitwear-form__radio-option" type="radio" id="type-interior" name="product-type" value="interior" checked>
+                  <label class="knitwear-form__label" for="type-interior">Аксессуар для интерьера</label>
+                </li>
+                <li class="knitwear-form__field-group-type">
+                  <input class="knitwear-form__radio-option" type="radio" id="type-toy" name="product-type" value="toy">
+                  <label class="knitwear-form__label" for="type-toy">Детская игрушка</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="knitwear-form__field knitwear-form__field--darken">
               <legend class="knitwear-form__title">Цвет</legend>
-              <div class="knitwear-form__field-group-color">
-                <label class="knitwear-form__label" for="color-white">Белый</label>
-                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-white" name="product-color" value="white" checked>
-              </div>
-              <div class="knitwear-form__field-group-color">
-                <label class="knitwear-form__label" for="color-grey">Серый</label>
-                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-grey" name="product-color" value="grey" checked>
-              </div>
-              <div class="knitwear-form__field-group-color">
-                <label class="knitwear-form__label" for="color-tiffany">«Тиффани»</label>
-                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-tiffany" name="product-color" value="tiffany">
-              </div>
-              <div class="knitwear-form__field-group-color">
-                <label class="knitwear-form__label" for="color-black">Черный</label>
-                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-black" name="product-color" value="black">
-              </div>
-              <div class="knitwear-form__field-group-color">
-                <label class="knitwear-form__label" for="color-pink">Розовый</label>
-                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-pink" name="product-color" value="pink">
-              </div>
-              <div class="knitwear-form__field-group-color">
-                <label class="knitwear-form__label" for="color-orange">Оранжевый</label>
-                <input class="knitwear-form__checkbox-option" type="checkbox" id="color-orange" name="product-color" value="orange">
-              </div>
+              <ul class="knitwear-form__list-group-color">
+                <li class="knitwear-form__field-group-color">
+                  <input class="knitwear-form__checkbox-option" type="checkbox" id="color-white" name="product-color" value="white" checked>
+                  <label class="knitwear-form__label" for="color-white">Белый</label>
+                </li>
+                <li class="knitwear-form__field-group-color">
+                  <input class="knitwear-form__checkbox-option" type="checkbox" id="color-grey" name="product-color" value="grey" checked>
+                  <label class="knitwear-form__label" for="color-grey">Серый</label>
+                </li>
+                <li class="knitwear-form__field-group-color">
+                  <input class="knitwear-form__checkbox-option" type="checkbox" id="color-tiffany" name="product-color" value="tiffany">
+                  <label class="knitwear-form__label" for="color-tiffany">«Тиффани»</label>
+                </li>
+                <li class="knitwear-form__field-group-color">
+                  <input class="knitwear-form__checkbox-option" type="checkbox" id="color-black" name="product-color" value="black">
+                  <label class="knitwear-form__label" for="color-black">Черный</label>
+                </li>
+                <li class="knitwear-form__field-group-color">
+                  <input class="knitwear-form__checkbox-option" type="checkbox" id="color-pink" name="product-color" value="pink">
+                  <label class="knitwear-form__label" for="color-pink">Розовый</label>
+                </li>
+                <li class="knitwear-form__field-group-color">
+                  <input class="knitwear-form__checkbox-option" type="checkbox" id="color-orange" name="product-color" value="orange">
+                  <label class="knitwear-form__label" for="color-orange">Оранжевый</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="knitwear-form__field ">
               <legend class="knitwear-form__title">Фио</legend>
-              <div class="knitwear-form__field-group-fullname">
-                <label class="knitwear-form__label" for="first-name">Имя:</label>
-                <input class="knitwear-form__text-option" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="knitwear-form__field-group-fullname">
-                <label class="knitwear-form__label" for="last-name">Фамилия:</label>
-                <input class="knitwear-form__text-option" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="knitwear-form__field-group-fullname">
-                <label class="knitwear-form__label" for="middle-name">Отчество:</label>
-                <input class="knitwear-form__text-option" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
-              </div>
-
+              <ul class="knitwear-form__list-group-fullname">
+                <li class="knitwear-form__field-group-fullname">
+                  <label class="knitwear-form__label" for="first-name">Имя:</label>
+                  <input class="knitwear-form__option-text" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+                </li>
+                <li class="knitwear-form__field-group-fullname">
+                  <label class="knitwear-form__label" for="last-name">Фамилия:</label>
+                  <input class="knitwear-form__option-text" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="knitwear-form__field-group-fullname">
+                  <label class="knitwear-form__label" for="middle-name">Отчество:</label>
+                  <input class="knitwear-form__option-text" type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="knitwear-form__field knitwear-form__field--darken">
               <legend class="knitwear-form__title">тел</legend>
               <div class="knitwear-form__field-group-phone">
-                <input class="knitwear-form__tel-option" type="tel" name="phone" pattern="\+7 \d\d\d \d\d\d \d\d \d\d" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="knitwear-form__option-phone" type="tel" name="phone" pattern="\+7 \d\d\d \d\d\d \d\d \d\d" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </div>
             </fieldset>
             <fieldset class="knitwear-form__field knitwear-form__field--darken">
               <legend class="knitwear-form__title">E-mail</legend>
               <div class="knitwear-form__field-group-email">
-                <input class="knitwear-form__email-option" type="email" name="email" placeholder="Ваш Email*" required>
+                <input class="knitwear-form__option-email" type="email" name="email" placeholder="Ваш Email*" required>
               </div>
             </fieldset>
             <fieldset class="knitwear-form__field">
               <legend class="knitwear-form__title">Доп</legend>
               <div class="knitwear-form__field-group-additional">
-                <textarea class="knitwear-form__text-option" name="additional-information" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea class="knitwear-form__option-additional" name="additional-information" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>
             <small class="knitwear-form__tagline">*Поля обязательны для заполнения</small>
@@ -133,13 +138,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграм</a>
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Мы в Инстаграм</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттер</a>
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Мы в Твиттер</span>
+              </a>
             </li>
           </ul>
         </div>
