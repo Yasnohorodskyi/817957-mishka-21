@@ -22,42 +22,27 @@
   line-height: 18px;
 }
 
-.knitwear-form__option {
-  &-text,
-  &-phone,
-  &-email {
-    .form-text;
-    border: none;
-    border-bottom: 2px solid @black;
-  }
+.knitwear-form__option-state {
+  .form-text;
+  border: none;
+  border-bottom: 2px solid @black;
+}
 
-  &-text::placeholder,
-  &-phone::placeholder,
-  &-email::placeholder {
-    .form-placeholder;
-  }
+.knitwear-form__option-state::placeholder,
+.knitwear-form__option-additional::placeholder {
+  .form-placeholder;
+}
 
-  &-text:focus,
-  &-phone:focus,
-  &-email:focus,
-  &-text:hover,
-  &-phone:hover,
-  &-email:hover,
-  &-text:active,
-  &-phone:active,
-  &-email:active {
-    border-bottom: 2px solid @soft-green-active;
-  }
+.knitwear-form__option-state:focus,
+.knitwear-form__option-state:hover,
+.knitwear-form__option-state:active {
+  border-bottom: 2px solid @soft-green-active;
 }
 
 .knitwear-form__option-additional {
   .form-text;
   border: none;
   outline: 2px solid @black;
-}
-
-.knitwear-form__option-additional::placeholder {
-  .form-placeholder;
 }
 
 .knitwear-form__option-additional:focus,
