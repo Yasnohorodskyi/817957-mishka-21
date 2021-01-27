@@ -1,3 +1,5 @@
+// Контент главного меню
+
 .main-nav__list {
   list-style: none;
 }
@@ -9,6 +11,22 @@
   text-decoration: none;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__link--product-wrapper {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__link--product-wrapper {
+    font-size: 17px;
+  }
+
+  .main-nav__link--state-wrapper {
+    font-size: 15px;
+  }
+}
+
 .main-nav__link:hover,
 .main-nav__link:focus {
   color: @black-hover;
@@ -16,4 +34,134 @@
 
 .main-nav__link:active {
   color: @black-visited;
+}
+
+// Сетка главного меню
+.main-nav__list--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 29px;
+  right: 30px;
+}
+
+.main-nav__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-nav__link--product-wrapper,
+.main-nav__link--user-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 79px;
+}
+
+.main-nav__item--state-wrapper,
+.main-nav__item--feature-wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list--container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    flex-direction: row;
+    min-height: 133px;
+  }
+
+  .main-nav__item--product-wrapper {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .main-nav__item--user-wrapper {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .main-nav__link--product-wrapper {
+    justify-content: flex-end;
+    width: 167px;
+  }
+
+  .main-nav__link--user-wrapper {
+    min-height: 89px;
+    align-items: flex-start;
+  }
+
+  .main-nav__link--search-wrapper {
+    width: 82px;
+  }
+
+  .main-nav__link--cart-wrapper {
+    width: 264px;
+    align-items: flex-end;
+  }
+
+  .main-nav__search-field {
+    display: none;
+  }
+
+  .main-nav__feature {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__item--feature-wrapper {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item--product-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .main-nav__link--product-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    width: 220px;
+    min-height: 89px;
+  }
+
+  .main-nav__link--cart-wrapper {
+    width: 316px;
+  }
+
+  .main-nav__item--state-wrapper {
+    display: flex;
+    position: absolute;
+    align-items: flex-end;
+  }
+
+  .main-nav__link--state-wrapper {
+    display: flex;
+    width: 220px;
+  }
 }

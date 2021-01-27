@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,22 +12,22 @@
         <a class="page-header__logo">
           <img src="https://via.placeholder.com/85x36" alt="Интернет-магазин «Мишка»">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог  товаров</a>
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">X<span class="visually-hidden">Открыть/Закрыть меню</span></button>
+          <ul class="main-nav__list main-nav__list--container">
+            <li class="main-nav__item main-nav__item--product-wrapper">
+              <a class="main-nav__link main-nav__link--product-wrapper" href="catalog.html">Каталог  товаров</a>
+              <a class="main-nav__link main-nav__link--product-wrapper" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Поиск по сайту</a>
-              <a class="main-nav__link" href="#">Корзина: <span class=""></span>пока пуста</a>
+            <li class="main-nav__item main-nav__item--user-wrapper">
+              <a class="main-nav__link main-nav__link--user-wrapper main-nav__link--search-wrapper" href="#"> <span class="main-nav__search-field">Поиск по сайту</span></a>
+              <a class="main-nav__link main-nav__link--user-wrapper main-nav__link--cart-wrapper" href="#">Корзина: пока пуста</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Новые поступления</a>
-              <a class="main-nav__link" href="#">Распродажа</a>
+            <li class="main-nav__item main-nav__item--state-wrapper">
+              <a class="main-nav__link main-nav__link--state-wrapper" href="#">Новые поступления</a>
+              <a class="main-nav__link main-nav__link--state-wrapper" href="#">Распродажа</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--feature-wrapper">
               <p class="main-nav__feature">Бесплатная доставка по России</p>
             </li>
           </ul>
